@@ -1,268 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: justify;  /* 讓文字左右對齊 */
-    margin: 0 auto;
-    max-width: 800px;  /* 限制最大寬度 */
-    padding: 20px;
-    font-size: 20px;  /* 預設電腦版字體 */
-    line-height: 1.8;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-main {
-    padding: 20px;
-}
-
-p {
-    max-width: 40em;  /* 限制每行約 40 字 */
-    text-align: justify;  /* 讓文字左右對齊 */
-    line-height: 1.8;
-    margin: 0 auto 2em;  /* 段落之間間隔 2em 並置中 */
-}
-
-footer {
-    margin-top: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* 手機版調整 */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 28px;  /* 手機版字體放大 */
-        line-height: 1.6;  /* 增加行距 */
-        text-align: left;  /* 文字改為靠左對齊 */
-        padding: 30px;  /* 增加內距，避免文字貼邊 */
-    }
-}
-/* === 全域設定 === */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: justify;  /* 讓文字左右對齊 */
-    margin: 0 auto;
-    max-width: 800px;  /* 限制最大寬度 */
-    padding: 20px;
-    font-size: 20px;  /* 預設電腦版字體 */
-    line-height: 1.8;
-}
-
-/* === 頁首設定 === */
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* === 導覽列設定 === */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* === 主要內容區塊 === */
-main {
-    padding: 20px;
-}
-
-p {
-    max-width: 40em;  /* 限制每行約 40 字 */
-    text-align: justify;  /* 讓文字左右對齊 */
-    line-height: 1.8;
-    margin: 0 auto 2em;  /* 段落間隔 2em，並置中 */
-}
-
-/* === 頁尾設定 === */
-footer {
-    margin-top: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* === 手機版設定（寬度小於 768px 時）=== */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 28px;  /* 手機版字體放大 */
-        line-height: 1.6;  /* 增加行距 */
-        text-align: left;  /* 讓手機版文字靠左對齊 */
-        padding: 30px;  /* 增加內距，避免文字貼邊 */
-    }
-}
-/* === 全域設定 === */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: justify;  /* 讓文字左右對齊 */
-    margin: 0 auto;
-    max-width: 800px;  /* 限制最大寬度 */
-    padding: 20px;
-    font-size: 20px;  /* 預設電腦版字體 */
-    line-height: 1.8;
-}
-
-/* === 頁首設定 === */
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 5px;  /* 縮小 header 上下間距 */
-}
-
-/* === 導覽列設定 === */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* === 主要內容區塊 === */
-main {
-    padding: 15px;  /* 縮小主要內容的內距 */
-}
-
-p {
-    max-width: 40em;  /* 限制每行約 40 字 */
-    text-align: justify;  /* 讓文字左右對齊 */
-    line-height: 1.8;
-    margin: 0 auto 1.5em;  /* 段落間隔縮小 */
-}
-
-/* === 頁尾設定 === */
-footer {
-    margin-top: 10px;  /* 減少 footer 與內容的間距 */
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 8px 5px;  /* 縮小 footer 上下間距 */
-}
-
-/* === 手機版設定（寬度小於 768px 時）=== */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 26px;  /* 手機版字體縮小（避免過大影響排版） */
-        line-height: 1.5;  /* 行距稍微縮小 */
-        text-align: left;  /* 讓手機版文字靠左對齊 */
-        padding: 10px;  /* **縮小手機版的內距** */
-    }
-
-    main {
-        padding: 10px;  /* **進一步縮小主要內容內距** */
-    }
-
-    p {
-        margin-bottom: 1em;  /* **段落間距縮小** */
-    }
-
-    header, footer {
-        padding: 5px 0;  /* **減少 header & footer 的上下空間** */
-    }
-}
 /* === 全域設定 === */
 body {
     font-family: "Arial", sans-serif;
-    background-color: #f9f9f9;  /* 柔和背景色 */
-    color: #333;  /* 深灰色字體，減少刺眼對比 */
+    background: linear-gradient(180deg, #f4f4f4, #e0e0e0); /* 柔和漸變背景 */
+    color: #333;
+    text-align: justify;
     margin: 0;
     padding: 0;
-    text-align: justify;
+}
+
+/* === 內容容器（統一最大寬度） === */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* === 頁首（Header） === */
 header {
-    background: linear-gradient(135deg, #007bff, #0056b3);  /* 現代感漸變 */
+    background: linear-gradient(135deg, #555, #333); /* 現代感灰色漸變 */
     color: white;
     text-align: center;
     padding: 15px 10px;
     font-size: 24px;
     font-weight: bold;
-    border-bottom: 3px solid #004080;
+    border-bottom: 3px solid #222;
+    position: relative;
 }
 
-/* === 導覽列（變成漢堡選單） === */
-.nav-toggle {
-    display: none;
-}
-
+/* === 導覽列（桌機版） === */
 nav {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 91, 187, 0.9);
     text-align: center;
     padding: 10px 0;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    padding: 10px 0;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
+    font-size: 18px;
     padding: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* === 手機版漢堡選單（隱藏桌機版選單） === */
+.nav-toggle {
+    display: none;
 }
 
 .nav-toggle-label {
@@ -272,34 +67,60 @@ nav ul li a {
     position: absolute;
     top: 15px;
     right: 20px;
+    display: none; /* 預設隱藏 */
 }
 
-/* === 讓漢堡選單可展開 === */
-#nav-toggle:checked + nav {
-    display: block;
+@media screen and (max-width: 768px) {
+    .nav-toggle-label {
+        display: block; /* 手機版顯示 */
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(51, 51, 51, 0.9); /* 深灰色背景 */
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #nav-toggle:checked + nav {
+        display: block;
+    }
 }
 
-/* === 主要內容區塊 === */
+/* === 主要內容區塊（卡片式設計） === */
 main {
     padding: 20px;
 }
 
-/* === 卡片式段落設計 === */
 .card {
     background: white;
     padding: 20px;
-    margin: 15px 0;
+    margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .card h2 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 10px;
-    color: #007bff;
+    color: #555; /* 深灰色標題 */
 }
 
 .card p {
@@ -307,13 +128,13 @@ main {
     line-height: 1.6;
 }
 
-/* === 按鈕設計 === */
+/* === 按鈕設計（灰色主題） === */
 .button {
     display: block;
     width: 100%;
     text-align: center;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #666; /* 淺灰色按鈕 */
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -324,7 +145,7 @@ main {
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #444; /* 深灰色 hover */
 }
 
 /* === 頁尾（Footer） === */
@@ -337,16 +158,21 @@ footer {
     margin-top: 20px;
 }
 
-/* === 響應式設計：針對手機版調整 === */
+/* === 響應式設計（針對手機版） === */
 @media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
     body {
         font-size: 20px;
         line-height: 1.6;
-        padding: 10px;
+        text-align: left;
     }
 
     header {
         font-size: 22px;
+        padding: 12px;
     }
 
     .card {
