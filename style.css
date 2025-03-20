@@ -51,4 +51,15 @@ p {
 p {
     margin-bottom: 2em;  /* 段落之間空兩行 */
 }
+/* 預設電腦版字體 */
+body {
+    font-size: 18px;
+}
+
+/* 讓手機版的字體變大 */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 22px;  /* 手機版字體變大 */
+    }
+}
 
