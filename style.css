@@ -27,6 +27,10 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
 }
+p {
+    margin-bottom: 2em;  /* 段落之間空兩行 */
+}
+
 
 main {
     padding: 20px;
@@ -38,3 +42,13 @@ footer {
     color: white;
     padding: 10px 0;
 }
+p {
+    max-width: 40em;  /* 設定最大寬度，每行約 46 個字 */
+    text-align: justify;  /* 讓文字左右對齊 */
+    line-height: 1.8;  /* 增加行距，讓閱讀更舒服 */
+    margin: 0 auto;  /* 讓文字區塊置中 */
+}
+p {
+    margin-bottom: 2em;  /* 段落之間空兩行 */
+}
+
