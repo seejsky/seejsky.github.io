@@ -63,3 +63,22 @@ body {
     }
 }
 
+/* 預設電腦版字體 */
+body {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;  /* 讓文字左右對齊 */
+    margin: 0 auto;
+    max-width: 800px;  /* 限制最大寬度，避免太長影響閱讀 */
+    padding: 20px;
+}
+
+/* 手機版字體變大 50px 並保持排版整齊 */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 50px;  /* 手機版字體變 50px */
+        line-height: 1.5;  /* 增加行距，避免文字太擠 */
+        text-align: justify;  /* 讓段落左右對齊 */
+        padding: 30px;  /* 內距，避免文字貼邊 */
+    }
+}
