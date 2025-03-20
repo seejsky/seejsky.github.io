@@ -129,3 +129,83 @@ footer {
         padding: 30px;  /* 增加內距，避免文字貼邊 */
     }
 }
+/* === 全域設定 === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: justify;  /* 讓文字左右對齊 */
+    margin: 0 auto;
+    max-width: 800px;  /* 限制最大寬度 */
+    padding: 20px;
+    font-size: 20px;  /* 預設電腦版字體 */
+    line-height: 1.8;
+}
+
+/* === 頁首設定 === */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;  /* 縮小 header 上下間距 */
+}
+
+/* === 導覽列設定 === */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* === 主要內容區塊 === */
+main {
+    padding: 15px;  /* 縮小主要內容的內距 */
+}
+
+p {
+    max-width: 40em;  /* 限制每行約 40 字 */
+    text-align: justify;  /* 讓文字左右對齊 */
+    line-height: 1.8;
+    margin: 0 auto 1.5em;  /* 段落間隔縮小 */
+}
+
+/* === 頁尾設定 === */
+footer {
+    margin-top: 10px;  /* 減少 footer 與內容的間距 */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px 5px;  /* 縮小 footer 上下間距 */
+}
+
+/* === 手機版設定（寬度小於 768px 時）=== */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 26px;  /* 手機版字體縮小（避免過大影響排版） */
+        line-height: 1.5;  /* 行距稍微縮小 */
+        text-align: left;  /* 讓手機版文字靠左對齊 */
+        padding: 10px;  /* **縮小手機版的內距** */
+    }
+
+    main {
+        padding: 10px;  /* **進一步縮小主要內容內距** */
+    }
+
+    p {
+        margin-bottom: 1em;  /* **段落間距縮小** */
+    }
+
+    header, footer {
+        padding: 5px 0;  /* **減少 header & footer 的上下空間** */
+    }
+}
