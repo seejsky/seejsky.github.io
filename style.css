@@ -61,3 +61,71 @@ footer {
         padding: 30px;  /* 增加內距，避免文字貼邊 */
     }
 }
+/* === 全域設定 === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: justify;  /* 讓文字左右對齊 */
+    margin: 0 auto;
+    max-width: 800px;  /* 限制最大寬度 */
+    padding: 20px;
+    font-size: 20px;  /* 預設電腦版字體 */
+    line-height: 1.8;
+}
+
+/* === 頁首設定 === */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* === 導覽列設定 === */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* === 主要內容區塊 === */
+main {
+    padding: 20px;
+}
+
+p {
+    max-width: 40em;  /* 限制每行約 40 字 */
+    text-align: justify;  /* 讓文字左右對齊 */
+    line-height: 1.8;
+    margin: 0 auto 2em;  /* 段落間隔 2em，並置中 */
+}
+
+/* === 頁尾設定 === */
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* === 手機版設定（寬度小於 768px 時）=== */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 28px;  /* 手機版字體放大 */
+        line-height: 1.6;  /* 增加行距 */
+        text-align: left;  /* 讓手機版文字靠左對齊 */
+        padding: 30px;  /* 增加內距，避免文字貼邊 */
+    }
+}
