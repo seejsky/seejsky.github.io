@@ -209,3 +209,156 @@ footer {
         padding: 5px 0;  /* **減少 header & footer 的上下空間** */
     }
 }
+/* === 全域設定 === */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;  /* 柔和背景色 */
+    color: #333;  /* 深灰色字體，減少刺眼對比 */
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+/* === 頁首（Header） === */
+header {
+    background: linear-gradient(135deg, #007bff, #0056b3);  /* 現代感漸變 */
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid #004080;
+}
+
+/* === 導覽列（變成漢堡選單） === */
+.nav-toggle {
+    display: none;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 91, 187, 0.9);
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.nav-toggle-label {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* === 讓漢堡選單可展開 === */
+#nav-toggle:checked + nav {
+    display: block;
+}
+
+/* === 主要內容區塊 === */
+main {
+    padding: 20px;
+}
+
+/* === 卡片式段落設計 === */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* === 按鈕設計 === */
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* === 頁尾（Footer） === */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* === 響應式設計：針對手機版調整 === */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+        line-height: 1.6;
+        padding: 10px;
+    }
+
+    header {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
