@@ -1,20 +1,25 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    text-align: justify;  /* 讓文字左右對齊 */
+    margin: 0 auto;
+    max-width: 800px;  /* 限制最大寬度 */
+    padding: 20px;
+    font-size: 20px;  /* 預設電腦版字體 */
+    line-height: 1.8;
 }
 
 header {
     background-color: #333;
     color: white;
+    text-align: center;
     padding: 10px 0;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -27,77 +32,32 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
 }
-p {
-    margin-bottom: 2em;  /* 段落之間空兩行 */
-}
-
 
 main {
     padding: 20px;
+}
+
+p {
+    max-width: 40em;  /* 限制每行約 40 字 */
+    text-align: justify;  /* 讓文字左右對齊 */
+    line-height: 1.8;
+    margin: 0 auto 2em;  /* 段落之間間隔 2em 並置中 */
 }
 
 footer {
     margin-top: 20px;
     background-color: #333;
     color: white;
+    text-align: center;
     padding: 10px 0;
 }
-p {
-    max-width: 40em;  /* 設定最大寬度，每行約 46 個字 */
-    text-align: justify;  /* 讓文字左右對齊 */
-    line-height: 1.8;  /* 增加行距，讓閱讀更舒服 */
-    margin: 0 auto;  /* 讓文字區塊置中 */
-}
-p {
-    margin-bottom: 2em;  /* 段落之間空兩行 */
-}
-/* 預設電腦版字體 */
-body {
-    font-size: 18px;
-}
 
-/* 讓手機版的字體變大 */
+/* 手機版調整 */
 @media screen and (max-width: 768px) {
     body {
-        font-size: ˇ32px;  /* 手機版字體變大 */
-    }
-}
-
-/* 預設電腦版字體 */
-body {
-    font-size: 20px;
-    line-height: 1.8;
-    text-align: justify;  /* 讓文字左右對齊 */
-    margin: 0 auto;
-    max-width: 800px;  /* 限制最大寬度，避免太長影響閱讀 */
-    padding: 20px;
-}
-
-/* 手機版字體變大 50px 並保持排版整齊 */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 50px;  /* 手機版字體變 50px */
-        line-height: 1.5;  /* 增加行距，避免文字太擠 */
-        text-align: justify;  /* 讓段落左右對齊 */
-        padding: 30px;  /* 內距，避免文字貼邊 */
-    }
-}
-/* 預設電腦版文字設定 */
-body {
-    font-size: 20px;
-    line-height: 1.8;
-    text-align: justify;  /* 讓電腦版文字左右對齊 */
-    margin: 0 auto;
-    max-width: 800px;  /* 限制最大寬度，避免太長影響閱讀 */
-    padding: 20px;
-}
-
-/* 手機版設定 */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 50px;  /* 手機版字體變 50px */
-        line-height: 1.5;  /* 增加行距，避免文字太擠 */
-        text-align: left;  /* 手機版文字靠左對齊 */
-        padding: 30px;  /* 內距，避免文字貼邊 */
+        font-size: 28px;  /* 手機版字體放大 */
+        line-height: 1.6;  /* 增加行距 */
+        text-align: left;  /* 文字改為靠左對齊 */
+        padding: 30px;  /* 增加內距，避免文字貼邊 */
     }
 }
