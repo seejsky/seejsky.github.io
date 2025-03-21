@@ -233,3 +233,43 @@ footer a:hover {
     line-height: 1.6; /* 行高 */
 }
 
+/* 基本全站樣式 */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(180deg, #f5f5f5, #e0e0e0);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 主要容器樣式 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* 頁首、導覽列樣式 */
+header, .nav-bar ul li a {
+    padding: 20px 0;
+    font-size: 16px; /* 適中字型大小 */
+}
+
+/* 內容區塊樣式 */
+.content-section p, .center-poem p, .limited-width {
+    font-size: 16px; /* 基本字型大小調整 */
+    line-height: 1.6; /* 適合閱讀的行高 */
+    text-indent: 1em; /* 首行縮進 */
+}
+
+/* 媒體查詢，對小於600px寬的設備進行樣式調整 */
+@media (max-width: 600px) {
+    body, header h1, .nav-bar ul li a, .content-section p, .center-poem p, .limited-width {
+        font-size: 14px; /* 小屏幕字體大小 */
+    }
+    .container, .content-section, .limited-width, .center-poem {
+        padding: 15px 10px; /* 減少內邊距 */
+        text-indent: 0.5em; /* 縮小首行縮進 */
+    }
+}
