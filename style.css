@@ -302,8 +302,8 @@ figcaption {
 /* 手機版調整字體稍小 */
 @media screen and (max-width: 768px) {
     .center-poem {
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 16px;
+        line-height: 1;
     }
 }.center-poem p {
     font-size: 12px;
