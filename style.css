@@ -290,3 +290,19 @@ figcaption {
     margin-top: 10px;
     color: #555;
 }
+.center-poem {
+    font-size: 36px;           /* 字體大小加大 */
+    text-align: center;        /* 文字置中 */
+    line-height: 2;            /* 行距增加，讓排版更清楚 */
+    margin: 30px auto;         /* 上下間距 + 水平置中 */
+    max-width: 90%;            /* 不超過畫面寬度 */
+    font-family: "Noto Serif TC", "標楷體", serif; /* 傳統中文字體 */
+}
+
+/* 手機版調整字體稍小 */
+@media screen and (max-width: 768px) {
+    .center-poem {
+        font-size: 28px;
+        line-height: 1.8;
+    }
+}
