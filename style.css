@@ -302,7 +302,7 @@ figcaption {
 /* 手機版調整字體稍小 */
 @media screen and (max-width: 768px) {
     .center-poem {
-        font-size: 18px;
+        font-size: 12px;
         line-height: 1.8;
     }
 }.center-poem p {
@@ -315,7 +315,7 @@ figcaption {
     font-family: "Noto Serif TC", "標楷體", serif;
 }
 .center-poem h2 {
-    font-size: 18px;        /* 字體大小 */
+    font-size: 12px;        /* 字體大小 */
     font-weight: bold;      /* 粗體 */
     text-align: center;     /* 置中對齊 */
     margin: 8px 0;          /* 上下間距縮小 */
