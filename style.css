@@ -216,7 +216,7 @@ footer a:hover {
 .limited-width {
     max-width: 36em;      /* 每行大約 36 字 */
     margin: 0 auto 1.5em;   /* 置中並段落間距 */
-    font-size: 19px;
+    font-size: 26px;
     line-height: 1.8;
     text-align: justify;
     text-indent: 1.5em;
@@ -291,7 +291,7 @@ figcaption {
     color: #555;
 }
 .center-poem {
-    font-size: 36px;           /* 字體大小加大 */
+    font-size: 40px;           /* 字體大小加大 */
     text-align: center;        /* 文字置中 */
     line-height: 2;            /* 行距增加，讓排版更清楚 */
     margin: 30px auto;         /* 上下間距 + 水平置中 */
@@ -302,7 +302,24 @@ figcaption {
 /* 手機版調整字體稍小 */
 @media screen and (max-width: 768px) {
     .center-poem {
-        font-size: 28px;
+        font-size: 18px;
         line-height: 1.8;
     }
+}.center-poem p {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    margin: 10px 0;
+    color: #222;
+    font-family: "Noto Serif TC", "標楷體", serif;
 }
+.center-poem h2 {
+    font-size: 18px;        /* 字體大小 */
+    font-weight: bold;      /* 粗體 */
+    text-align: center;     /* 置中對齊 */
+    margin: 8px 0;          /* 上下間距縮小 */
+    line-height: 1.4;       /* 行距縮小 */
+    font-family: "Noto Serif TC", "標楷體", serif;  /* 書法感字體 */
+}
+
