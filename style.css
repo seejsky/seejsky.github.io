@@ -1,626 +1,230 @@
-/* === 全域設定 === */
+/* === 全站基礎設定 === */
 body {
     font-family: "Arial", sans-serif;
-    background: linear-gradient(180deg, #f4f4f4, #e0e0e0); /* 柔和漸變背景 */
+    background: linear-gradient(180deg, #f5f5f5, #e0e0e0);
     color: #333;
-    text-align: justify;
     margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* === 網頁內容寬度設定，置中 + 適合閱讀 === */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* === 頁首樣式 === */
+header {
+    background: linear-gradient(135deg, #555, #333);
+    color: white;
+    padding: 20px 0;
+    border-bottom: 3px solid #222;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* === 導覽列樣式 === */
+.nav-bar ul {
+    list-style: none;
+    margin: 10px 0 0;
     padding: 0;
 }
 
-/* === 內容容器（統一最大寬度） === */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+.nav-bar ul li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
-/* === 頁首（Header） === */
-header {
-    background: linear-gradient(135deg, #555, #333); /* 現代感灰色漸變 */
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* === 橫幅區塊（hero banner）=== */
+.hero {
+    background-color: #eee;
+    padding: 30px 0;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* === 主要內容區塊 === */
+.content-section {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.content-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 40em;
+    margin: 0 auto 1.8em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/* === 小標題設定 === */
+.content-section h2 {
+    font-size: 24px;
+    color: #444;
+    border-left: 5px solid #888;
+    padding-left: 12px;
+    margin-bottom: 1em;
+}
+
+/* === 圖片與圖說區塊 === */
+.content-image {
+    max-width: 100%;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 16px;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* === 引用樣式（blockquote）=== */
+blockquote {
+    background: #f0f0f0;
+    border-left: 5px solid #999;
+    margin: 20px auto;
+    padding: 15px 20px;
+    font-style: italic;
+    max-width: 36em;
+}
+
+blockquote p {
+    text-indent: 0;
+    text-align: center;
+    margin: 0;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* === 頁尾樣式 === */
+footer {
+    background: #333;
     color: white;
     text-align: center;
     padding: 15px 10px;
-    font-size: 24px;
-    font-weight: bold;
-    border-bottom: 3px solid #222;
-    position: relative;
-}
-/* === 全域設定 === */
-body {
-    font-family: "Arial", sans-serif;
-    background: linear-gradient(180deg, #f4f4f4, #e0e0e0); /* 柔和漸變背景 */
-    color: #333;
-    text-align: center; /* 讓整個版面置中 */
-    margin: 0;
-    padding: 0;
+    font-size: 14px;
+    margin-top: 30px;
 }
 
-/* === 內容容器（固定寬度 + 置中） === */
-.container {
-    width: 800px; /* 讓內容區域固定，保持視覺舒適 */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* === 主要內容區塊（置中 + 段落整齊） === */
-main {
-    padding: 20px;
-}
-
-/* === 卡片式設計（讓內容更集中） === */
-.card {
-    background: white;
-    padding: 25px;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 700px; /* 限制內容最大寬度，確保易讀 */
-}
-
-/* === 讓每行約 46 個字（40em） === */
-.card p {
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify; /* 讓段落文字左右對齊 */
-    max-width: 40em; /* 限制每行 40em，約 46 個字 */
-    margin: 0 auto;
-}
-
-/* === 頁尾（Footer + 置中） === */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-/* === 導覽列（桌機版） === */
-nav {
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+footer a {
+    color: #ccc;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
 }
 
-nav ul li a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
-/* === 手機版漢堡選單（隱藏桌機版選單） === */
-.nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    display: none; /* 預設隱藏 */
-}
-
-@media screen and (max-width: 768px) {
-    .nav-toggle-label {
-        display: block; /* 手機版顯示 */
-    }
-
-    nav {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: rgba(51, 51, 51, 0.9); /* 深灰色背景 */
-        text-align: center;
-        padding: 10px 0;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    nav ul {
-        display: block;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #nav-toggle:checked + nav {
-        display: block;
-    }
-}
-
-/* === 主要內容區塊（卡片式設計） === */
-main {
-    padding: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #555; /* 深灰色標題 */
-}
-
-.card p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* === 按鈕設計（灰色主題） === */
-.button {
-    display: block;
+/* === 書法作品圖片樣式 === */
+.calligraphy-img {
     width: 100%;
-    text-align: center;
-    padding: 12px;
-    background-color: #666; /* 淺灰色按鈕 */
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
+    max-width: 400px;
+    height: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 15px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.button:hover {
-    background-color: #444; /* 深灰色 hover */
+/* === 通用左對齊輔助類別 === */
+.align-left {
+    text-align: left;
 }
 
-/* === 頁尾（Footer） === */
-footer {
-    background: #333;
-    color: white;
+/* === 詩偈排版樣式（置中） === */
+.poem {
     text-align: center;
-    padding: 10px 0;
-    font-size: 16px;
-    margin-top: 20px;
+    line-height: 2;
+    font-size: 1.2em;
+    margin: 2em 0;
 }
 
-/* === 響應式設計（針對手機版） === */
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    body {
-        font-size: 20px;
-        line-height: 1.6;
-        text-align: left;
-    }
-
-    header {
-        font-size: 22px;
-        padding: 12px;
-    }
-
-    .card {
-        padding: 15px;
-    }
-
-    .button {
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-}
-/* === 全域設定 === */
-body {
-    font-family: "Arial", sans-serif;
-    background: linear-gradient(180deg, #f4f4f4, #e0e0e0); /* 柔和漸變背景 */
-    color: #333;
-    text-align: center; /* 讓所有內容置中 */
-    margin: 0;
-    padding: 0;
-}
-
-/* === 內容容器（固定寬度 + 置中） === */
-.container {
-    width: 800px; /* 讓內容區域固定，保持視覺舒適 */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* === 頁首（Header） === */
-header {
-    background: linear-gradient(135deg, #555, #333); /* 現代感灰色漸變 */
-    color: white;
+.poem p {
     text-align: center;
-    padding: 20px 0;
-    font-size: 26px;
-    font-weight: bold;
-    border-bottom: 3px solid #222;
-}
-
-/* === 導覽列（固定橫向 + 置中） === */
-nav {
-    text-align: center;
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block; /* 讓選單水平排列 */
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
     font-size: 18px;
-    padding: 10px;
-    display: inline-block;
+    line-height: 2;
+    margin: 0.5em 0;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* === 佛經格式排版（sutra） === */
+.sutra-section {
+    max-width: 40em;
+    margin: 3em auto;
+    font-size: 18px;
+    line-height: 2;
+    font-family: "Noto Serif TC", serif;
+    text-align: justify;
+    color: #333;
 }
 
-/* === 主要內容區塊（卡片式設計 + 置中） === */
-main {
-    padding: 20px;
+.sutra-section p {
+    text-indent: 2em;
+    margin-bottom: 2em;
 }
 
-.card {
-    background: white;
-    padding: 25px;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 700px; /* 限制內容最大寬度，確保易讀 */
+/* === 佛偈中心詩樣式 === */
+.center-poem {
+    max-width: 40em;
+    margin: 3em auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+    font-family: "Noto Serif TC", serif;
 }
 
-.card h2 {
+.center-poem p {
+    margin: 0.5em 0;
+    text-indent: 0;
+}
+
+.limited-width {
+    max-width: 37em;      /* 每行大約 37 字 */
+    margin: 0 auto 2em;   /* 置中並段落間距 */
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    text-indent: 2em;
+    font-family: "Noto Serif TC", serif;
+}
+.section-title {
+    margin-top: 2em;       /* 上方空間 */
+    margin-bottom: 1.5em;  /* 下方空間 */
     font-size: 24px;
-    margin-bottom: 15px;
-    color: #555; /* 深灰色標題 */
-}
-
-.card p {
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify; /* 讓段落文字保持整齊 */
-    max-width: 40em; /* 限制每行文字長度 */
-    margin: 0 auto;
-}
-
-/* === 按鈕設計（灰色主題 + 置中） === */
-.button {
-    display: inline-block;
-    width: 60%;
-    text-align: center;
-    padding: 12px;
-    background-color: #666; /* 淺灰色按鈕 */
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-top: 15px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-    background-color: #444; /* 深灰色 hover */
-}
-
-/* === 頁尾（Footer + 置中） === */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 16px;
-    margin-top: 20px;
-}
-/* === 全域設定 === */
-body {
-    font-family: "Arial", sans-serif;
-    background: linear-gradient(180deg, #f4f4f4, #e0e0e0); /* 柔和漸變背景 */
-    color: #333;
-    text-align: center; /* 讓整個版面置中 */
-    margin: 0;
-    padding: 0;
-}
-
-/* === 內容容器（置中 + 固定寬度） === */
-.container {
-    width: 800px; /* 讓內容區域保持適當寬度 */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* === 頁首（Header） === */
-header {
-    background: linear-gradient(135deg, #555, #333); /* 現代感灰色漸變 */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 26px;
-    font-weight: bold;
-    border-bottom: 3px solid #222;
-}
-
-/* === 導覽列（固定橫向 + 置中） === */
-nav {
-    text-align: center;
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block; /* 讓選單水平排列 */
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* === 主要內容區塊（置中 + 段落整齊） === */
-main {
-    padding: 20px;
-}
-
-/* === 卡片式設計（讓內容更集中） === */
-.card {
-    background: white;
-    padding: 25px;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 700px; /* 限制內容最大寬度，確保易讀 */
-}
-
-/* === 讓段落整齊易讀 === */
-.card p {
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify; /* 讓段落文字左右對齊 */
-    max-width: 40em; /* 限制每行文字長度 */
-    margin: 0 auto;
-}
-
-/* === 按鈕設計（灰色主題 + 置中） === */
-.button {
-    display: inline-block;
-    width: 60%;
-    text-align: center;
-    padding: 12px;
-    background-color: #666; /* 淺灰色按鈕 */
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-top: 15px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-    background-color: #444; /* 深灰色 hover */
-}
-
-/* === 頁尾（Footer + 置中） === */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 16px;
-    margin-top: 20px;
-}
-/* === 全域設定 === */
-body {
-    font-family: "Arial", sans-serif;
-    background: linear-gradient(180deg, #f4f4f4, #e0e0e0); /* 柔和漸變背景 */
-    color: #333;
-    text-align: center; /* 讓整個版面置中 */
-    margin: 0;
-    padding: 0;
-}
-
-/* === 內容容器（固定寬度 + 置中） === */
-.container {
-    width: 800px; /* 讓內容區域固定，保持視覺舒適 */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* === 頁首（Header） === */
-header {
-    background: linear-gradient(135deg, #555, #333); /* 現代感灰色漸變 */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 26px;
-    font-weight: bold;
-    border-bottom: 3px solid #222;
-}
-
-/* === 主要內容區塊（置中 + 段落整齊） === */
-main {
-    padding: 20px;
-}
-
-/* === 卡片式設計（讓內容更集中） === */
-.card {
-    background: white;
-    padding: 25px;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 700px; /* 限制內容最大寬度，確保易讀 */
-}
-
-/* === 讓每行約 46 個字（40em） === */
-.card p {
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify; /* 讓段落文字左右對齊 */
-    max-width: 40em; /* 限制每行 40em，約 46 個字 */
-    margin: 0 auto;
-}
-
-/* === 按鈕設計（灰色主題 + 置中） === */
-.button {
-    display: inline-block;
-    width: 60%;
-    text-align: center;
-    padding: 12px;
-    background-color: #666; /* 淺灰色按鈕 */
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-top: 15px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-    background-color: #444; /* 深灰色 hover */
-}
-
-/* === 頁尾（Footer + 置中） === */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 16px;
-    margin-top: 20px;
-}
-/* === 全域設定 === */
-body {
-    font-family: "Arial", sans-serif;
-    background: linear-gradient(180deg, #f4f4f4, #e0e0e0); /* 柔和漸變背景 */
-    color: #333;
-    text-align: center; /* 讓整個版面置中 */
-    margin: 0;
-    padding: 0;
-}
-
-/* === 內容容器（固定寬度 + 置中） === */
-.container {
-    width: 800px; /* 讓內容區域固定，保持視覺舒適 */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* === 頁首（Header） === */
-header {
-    background: linear-gradient(135deg, #555, #333); /* 現代感灰色漸變 */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 26px;
-    font-weight: bold;
-    border-bottom: 3px solid #222;
-}
-
-/* === 主要內容區塊（置中 + 段落整齊） === */
-main {
-    padding: 20px;
-}
-
-/* === 卡片式設計（讓內容更集中） === */
-.card {
-    background: white;
-    padding: 25px;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 700px; /* 限制內容最大寬度，確保易讀 */
-}
-
-/* === 讓每行約 46 個字（40em） === */
-.card p {
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify; /* 讓段落文字左右對齊 */
-    max-width: 40em; /* 限制每行 40em，約 46 個字 */
-    margin: 0 auto;
-}
-
-/* === 按鈕設計（灰色主題 + 置中） === */
-.button {
-    display: inline-block;
-    width: 60%;
-    text-align: center;
-    padding: 12px;
-    background-color: #666; /* 淺灰色按鈕 */
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-top: 15px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-    background-color: #444; /* 深灰色 hover */
-}
-
-/* === 頁尾（Footer + 置中） === */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 16px;
-    margin-top: 20px;
+    color: #444;
 }
