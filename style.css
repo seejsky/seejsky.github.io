@@ -322,4 +322,20 @@ figcaption {
     line-height: 1.4;       /* 行距縮小 */
     font-family: "Noto Serif TC", "標楷體", serif;  /* 書法感字體 */
 }
+@media screen and (max-width: 768px) {
+    /* 手機版段落文字設定 */
+    .limited-width {
+        font-size: 20px;        /* 手機上的字體變稍大 */
+        line-height: 1.8;       /* 增加行距讓文字不擁擠 */
+        padding: 10px;          /* 加內距避免貼邊 */
+    }
+
+    /* 特別句子：居中那句 */
+    .limited-width.center-line {
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+}
 
