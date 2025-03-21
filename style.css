@@ -293,7 +293,7 @@ figcaption {
 .center-poem {
     font-size: 40px;           /* 字體大小加大 */
     text-align: center;        /* 文字置中 */
-    line-height: 2;            /* 行距增加，讓排版更清楚 */
+    line-height: 1;            /* 行距增加，讓排版更清楚 */
     margin: 30px auto;         /* 上下間距 + 水平置中 */
     max-width: 90%;            /* 不超過畫面寬度 */
     font-family: "Noto Serif TC", "標楷體", serif; /* 傳統中文字體 */
@@ -310,12 +310,12 @@ figcaption {
     font-weight: bold;
     text-align: center;
     line-height: 1;
-    margin: 10px 0;
+    margin: 8px 0;
     color: #222;
     font-family: "Noto Serif TC", "標楷體", serif;
 }
 .center-poem h2 {
-    font-size: 24px;        /* 字體大小 */
+    font-size: 30px;        /* 字體大小 */
     font-weight: bold;      /* 粗體 */
     text-align: center;     /* 置中對齊 */
     margin: 8px 0;          /* 上下間距縮小 */
