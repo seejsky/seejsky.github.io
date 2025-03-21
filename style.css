@@ -273,3 +273,20 @@ header, .nav-bar ul li a {
         text-indent: 0.5em; /* 縮小首行縮進 */
     }
 }
+.calligraphy-figure {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.calligraphy-img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+figcaption {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
